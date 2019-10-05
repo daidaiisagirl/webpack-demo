@@ -1,0 +1,37 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "- public是静态资源文件，存放着index.html这个页面的模板，还存放一些不需要通过webpack去打包处理的静态资源\r - index.html页面模板文件\r - favicon.ico项目小图标\r - src源代码文件夹，存放的东西都需要被webpack处理\r - assets 静态资源文件，可以被webpack处理\r - App.vue 是vue的单文件组件，一般使用它作为万年老二组件，这种后缀名的文件需要通过转换器进行转换，vue-loader\r - index.js 项目入口文件\r - .gitignore git提交的忽略文件\r - README.md 项目的介绍文件\r - webpack.config.js 是webpack的配置文件",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daidaiisagirl/webpack-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daidaiisagirl/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/daidaiisagirl/webpack-demo#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-loader": "^0.6.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
